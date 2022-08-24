@@ -1,0 +1,167 @@
+body{
+    margin : 0;
+    overflow: auto;
+}
+.nav-item {
+  text-align: center;
+  vertical-align: middle;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item > a {
+  text-decoration: none;
+
+}
+.menu-btn {
+    position: fixed;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+@keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }@keyframes slide-out {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+.menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: black;
+    transition: all 0.3s ease-out;
+}
+
+.menu-btn.close {
+    transform: rotate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden;
+    margin: 0;
+}
+.menu.show {
+    visibility: visible;
+}
+.menu-nav{
+    height:100vh;
+    padding: 0;
+}
+.menu-nav .nav-item {
+    height: 20%;
+}
+img{
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    height: 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+#About{
+    background-color: #BCECE0;
+}
+#Project {
+    background-color: #F652A0;
+}
+#Links {
+    background-color: #36EEE0;
+}
+#Resume {
+    background-color: #4C5270;
+}
+
+#nav-1{
+    background-color: red;
+}
+#nav-2{
+    background-color: #BCECE0;
+}
+#nav-3 {
+    background-color: #F652A0;
+}
+#nav-4 {
+    background-color: #36EEE0;
+}
+#nav-5 {
+    background-color: #4C5270;
+}
+
+li {
+    list-style: none
+}
+ul{
+    margin: 0;
+}
+
+.slide-out-home {
+    animation: slide-out 0.3s linear 0.5s both;
+  }
+  
+  .slide-out-about {
+    animation: slide-out 0.3s linear 0.4s both;
+  }
+  
+  .slide-out-project {
+    animation: slide-out 0.3s linear 0.3s both;
+  }
+  
+  .slide-out-links {
+    animation: slide-out 0.3s linear 0.2s both;
+  }
+  
+  .slide-out-project {
+    animation: slide-out 0.3s linear 0.1s both;
+  }
+
+  .slide-in-home {
+    animation: slide-in 0.4s linear 0.2s both;
+  }
+  
+  .slide-in-2 {
+    animation: slide-in 0.4s linear 0.4s both;
+  }
+  
+  .slide-in-3 {
+    animation: slide-in 0.4s linear 0.6s both;
+  }
+  
+  .slide-in-4 {
+    animation: slide-in 0.4s linear 0.8s both;
+  }
+  
+  .slide-in-5 {
+    animation: slide-in 0.4s linear 1s both;
+  }
