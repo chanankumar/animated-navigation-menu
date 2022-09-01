@@ -11,7 +11,8 @@ body{
 }
 .nav-item > a {
   text-decoration: none;
-
+  color: black;
+  font-size: 2rem;
 }
 .menu-btn {
     position: fixed;
@@ -89,6 +90,7 @@ section {
     display : flex;
     justify-content: center;
     align-items: center;
+    font-size: 2rem;
 }
 #About{
     background-color: #BCECE0;
